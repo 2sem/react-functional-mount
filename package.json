@@ -1,6 +1,6 @@
 {
   "name": "react-functional-mount",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mount/Unmount hook for functional component",
   "keywords": [
     "useeffect",
