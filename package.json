@@ -2,6 +2,12 @@
   "name": "react-functional-mount",
   "version": "1.0.0",
   "description": "Mount/Unmount hook for functional component",
+  "keywords": [
+    "useeffect",
+    "mount",
+    "component",
+    "hook"
+  ],
   "author": "2sem",
   "license": "MIT",
   "repository": "2sem/react-functional-mount",
@@ -27,9 +33,12 @@
     "react": "^16.8.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/preset-typescript": "^7.16.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/enzyme": "^3.10.11",
     "@types/jest": "^25.1.4",
     "@types/node": "^12.12.38",
     "@types/react": "^16.9.27",
@@ -38,6 +47,8 @@
     "@typescript-eslint/parser": "^2.26.0",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-config-standard": "^14.1.0",
@@ -60,13 +71,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.17.3",
-    "@babel/preset-typescript": "^7.16.7",
-    "@types/enzyme": "^3.10.11",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6"
-  },
+  "dependencies": {},
   "babel": {
     "presets": [
       "@babel/preset-env",
