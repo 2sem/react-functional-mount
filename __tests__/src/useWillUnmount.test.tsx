@@ -1,11 +1,14 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { useWillUnmount } from '../../src'
+import { useWillUnmount, useDidUnmount } from '../../src'
+import 'jest-extended';
 
 const componentWillUnmount = jest.fn()
+const componentDidUnmount = jest.fn()
 
 export const TestComponent: React.FC = () => {
   useWillUnmount(componentWillUnmount)
+  useDidUnmount(componentDidUnmount)
 
   return (
     <div>
@@ -15,9 +18,9 @@ export const TestComponent: React.FC = () => {
 }
 
 describe('useDidMount', () => {
-  it('Mount handler will can be called', () => {
+  it('useWillUnmount will can be called', () => {
     const renderer = mount(<TestComponent />)
     renderer.unmount()
-    expect(componentWillUnmount).toBeCalled()
+    expect(componentWillUnmount).toHaveBeenCalledBefore(componentDidUnmount)
   })
 })

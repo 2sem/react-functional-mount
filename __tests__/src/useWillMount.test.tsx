@@ -14,7 +14,7 @@ export const TestComponent: React.FC = () => {
 }
 
 describe('useDidMount', () => {
-  it('Mount handler will can be called', () => {
+  it('useWillMount will can be called', () => {
     const renderer = mount(<TestComponent />)
     renderer.mount()
     expect(componentWillMount).toBeCalled()
