@@ -13,9 +13,13 @@ npm install --save react-functional-mount
 ## Usage
 
 ```tsx
-import { useDidMount, useWillUnmount } from 'react-functional-mount'
+import { useWillMount, useDidMount, useWillUnmount, useDidUnmount } from 'react-functional-mount'
 
 export const Example: React.FC = () => {
+  useWillMount(() => {
+    console.log('Example', 'componentWillMount')
+  })
+
   useDidMount(() => {
     console.log('Example', 'componentDidMount')
   })
@@ -23,7 +27,11 @@ export const Example: React.FC = () => {
   useWillUnmount(() => {
     console.log('Example', 'componentWillUnmount')
   })
-
+  
+  useDidUnmount(() => {
+    console.log('Example', 'componentDidUnmount')
+  })
+  
   return <Component />
 }
 ```
