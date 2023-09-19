@@ -1,6 +1,6 @@
 {
   "name": "react-functional-mount",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mount/Unmount hook for functional component",
   "keywords": [
     "useeffect",
@@ -82,7 +82,8 @@
   },
   "jest": {
     "setupFiles": [
-      "./__tests__/setup.ts", "jest-extended/all"
+      "./__tests__/setup.ts",
+      "jest-extended/all"
     ]
   }
 }
