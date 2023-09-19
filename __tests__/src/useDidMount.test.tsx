@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { useDidMount } from '../../src'
+import { useDidMount } from '../..'
 
 const componentDidMount = jest.fn()
 export const TestComponent: React.FC = () => {

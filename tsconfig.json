@@ -18,6 +18,6 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true
   },
-  "include": ["src", "__tests__/src"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": ["index.tsx"],
+  "exclude": ["node_modules", "dist", "example", "__tests__"]
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { useWillUnmount, useDidUnmount } from '../../src'
+import { useWillUnmount, useDidUnmount } from '../..'
 import 'jest-extended';
 
 const componentWillUnmount = jest.fn()
